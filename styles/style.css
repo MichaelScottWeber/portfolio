@@ -1,0 +1,287 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #f6f8fa;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Noto Sans", sans-serif;
+}
+
+section {
+  margin-top: 0px;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+}
+
+main {
+  /* padding-top: 70px; */
+
+}
+
+h1 {
+  color: #094438;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 12vw;
+  padding: 20px;
+}
+
+h2 {
+  color: #427e72;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 8vw;
+  padding: 30px;
+}
+
+h3 {
+  color: #094438;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+h4 {
+  color: #094438;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+a, div {
+  transition: .3s;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.container {
+  width: 100vw;
+}
+
+.navbar {
+  align-items: center;
+  background-color: hsla(209, 2%, 98%, 0);
+  /* background-color: #f6f8fa; */
+  /* background-color: #094438; */
+  /* background-color: #427e72; */
+  /* border-bottom: 2px solid #6fbaaa; */
+  /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); */
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-item {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.nav-item a {
+  color: #427e72;
+  font-family: "Barrio", sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.heading-container {
+  background-color: #f6f8fa;
+  padding: 90px 0 20px 0;
+  width: 100%;
+}
+
+.title-container {
+  /* margin: 0 20px 0 20px; */
+  text-align: center;
+  /* width: 100%; */
+}
+
+.border-svg {
+  width: 100%;
+  margin: 0;
+  background-color: #f6f8fa;
+}
+
+.about-section {
+  background-color: #094438;
+  width: 100%;
+  height: 100%;
+  /* height: 1000px; */
+  /* padding-top: 70px; */
+}
+
+.about-text-container {
+  margin: 60px 20vw;
+  text-align: center;
+}
+
+.about-header {
+  color: #e6ebf0;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.about-text {
+  color: #e6ebf0;
+  margin-bottom: 2em;
+}
+
+.projects-section {
+  background-color: #f6f8fa;
+  width: 100%;
+  height: 100%;
+  /* max-height: 100vh; */
+  /* padding-top: 70px; */
+}
+
+.project-sub-heading, .contact-sub-heading {
+  color: #427e72;
+  text-align: center;
+}
+
+.project-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: center;
+  margin: 30px 20px;
+}
+
+.project {
+  background-image: url("../imgs/whats-cookin-app.jpg");
+  background-size: cover;
+  /* border: 2px solid #427e72; */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
+  height: 300px;
+  max-width: 300px;
+}
+
+.project:hover, .project:focus {
+  /* border: 2px solid #427e72; */
+  box-shadow: 2px 5px 9px 0 rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); /* fallback */
+  background-color: rgba(0,0,0,0.3);
+}
+
+.modal-content {
+  background-color: #f6f8fa;
+  /* border: 1px solid #094438; */
+  border-radius: 10px;
+  width: 75vw;
+  height: auto;
+  margin: 15% auto;
+  padding: 20px;
+}
+
+.modal-link-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.modal-link {
+  color: #427e72;
+  font-family: "Barrio", sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.project-text {
+  margin-bottom: 20px;
+}
+
+.close {
+  margin-top: 20px;
+}
+
+.close:hover, .close:focus {
+  cursor: pointer;
+}
+
+.contact-section {
+  background-color: #094438;
+  width: 100%;
+  /* height: 100vh; */
+  /* padding-top: 70px; */
+}
+
+.contact-heading {
+  color: #f6f8fa;
+}
+
+.contact-icon-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-item {
+  border: 2px solid #f6f8fa;
+  border-radius: 50%;
+  color: #f6f8fa;
+  margin: 60px 0;
+  padding: 12px;
+}
+
+.bx {
+  font-size: 2em;
+}
+
+a.contact-item:hover {
+  background-color: #f6f8fa;
+  color: #094438;
+}
+
+.copyright-text {
+  color: #427e72;
+  font-size: 1em;
+  text-align: center;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Michael Weber</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@1.9.1/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- Nav Bar -->
+        <nav>
+          <div class="navbar">
+            <ul class="nav-container">
+              <li class="nav-item">
+                <a href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Header -->
+        <div class="heading-container">
+          <div class="title-container">
+            <h1>Michael Weber</h1>
+            <h2>Web Developer</h2>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+          <img class="border-svg" src="imgs/jagged-border-1.svg" alt="">
+          <div class="about-text-container">
+            <h3 class="about-header">When I was a little kid I was fascinated with making things.</h3>
+            <p class="about-text">I used to craft inventions out of broken pens and rubber bands, and later on made my own musical instruments by circuit-bending toys.</p>
+            <p class="about-text">As an adult, I still spend most of my time creating. I've worked as a professional musician for the last ten years, writing/recording music for TV shows and teaching private and group music lessons. Now I am a self-taught web developer, using HTML, CSS and JavaScript to create web applications that are useful, engaging, and mobile-responsive.</p>
+            <p class="about-text">My goals are to strengthen the skills and knowledge I already posses, continue learning new languages, frameworks and technologies, and find employment with an open and transparent company that will help me to learn and grow through mentorship.</p>
+          </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+          <img class="border-svg" src="imgs/jagged-border-2.svg" alt="">
+          <h3>Projects</h3>
+          <p class="project-sub-heading">See what I've been working on</p>
+          <div class="project-container">
+            <div id="myBtn" class="project"></div>
+          </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <h4>What's Cookin?</h4>
+              <div class="modal-link-container">
+                <a class="modal-link" href="https://afternoon-escarpment-73810.herokuapp.com/" target="_blank">View Site</a>
+                <a class="modal-link" href="https://github.com/MichaelScottWeber/Recipe-Finder" target="_blank">View Source</a>
+              </div>
+              <p class="project-text"><strong>Description:</strong> A simple wrapper for the <a href="http://www.recipepuppy.com/about/api/" target="_blank">Recipe Puppy API</a>.  Users can search for either recipe titles or ingredients, and the app returns *ten recipes.</p>
+              <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS, Grid, JavaScript, Node.js, Express.js, Request, EJS</p>
+              <p class="project-text"><strong>Challenges Overcome:</strong> The goal of this project was to call on an API and present the supplied data in a meaningful way.  I utelized Express and Request for the back-end routing and EJS to display data from the API dynamically within the HTML.  CSS Grid (specifically it's grid-template-columns: minmax feature) allowed the recipes to display responsively and play nice on mobile.</p>
+              <p class="project-text"><strong>What's Next?</strong> *One of the biggest things missing from this app is pagination!  The Recipe Puppy API is set up in such a way that it automatically returns only ten results for each search query.  To see more results, you have to append "p=2", 3, 4, etc. to the endpoint url.  I haven't yet figured out how to gracefully code that into the UI, but I'm working on it!</p>
+              <i id="close" class='bx bx-x close'></i>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section id="blog" class="blog-section"></section> -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+          <img class="border-svg" src="imgs/jagged-border-3.svg" alt="">
+          <h3 class="contact-heading">Get In Touch</h3>
+          <p class="contact-sub-heading">I'd love to hear from you!</p>
+          <div class="contact-icon-container">
+              <a class="contact-item" href="https://github.com/MichaelScottWeber" target="_blank">
+                <i class='bx bxl-github'></i>
+              </a>
+              <a class="contact-item" href="https://codepen.io/michaelscottweber/" target="_blank">
+                <i class='bx bxl-codepen'></i>
+              </a>
+              <a class="contact-item" href="https://www.linkedin.com/in/michaelscottweber/" target="_blank">
+                <i class='bx bxl-linkedin'></i>
+              </a>
+              <a class="contact-item" href="mailto:mscottweber@gmail.com">
+                <i class='bx bx-envelope'></i>
+              </a>
+          </div>
+          <p class="copyright-text">&copy; 2019 Michael Weber</p>
+        </section>
+      </main>
+    </div>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </body>
+</html>

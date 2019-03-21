@@ -28,7 +28,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 section {
@@ -47,22 +47,25 @@ main {
 
 h1 {
   color: #094438;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 12vw;
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 100;
+  font-size: 13vw;
   padding: 20px;
 }
 
 h2 {
   color: #427e72;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 8vw;
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 500;
+  font-size: 5vw;
   padding: 30px;
 }
 
 h3 {
   color: #094438;
+  font-family: 'Encode Sans', sans-serif;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.5em;
   padding-bottom: 10px;
   text-align: center;
@@ -70,7 +73,8 @@ h3 {
 
 h4 {
   color: #094438;
-  font-family: "Fjalla One", sans-serif;
+  /* font-family: "Fjalla One", sans-serif; */
+  font-family: 'Encode Sans', sans-serif;
   font-size: 1.6em;
   margin-bottom: 20px;
   text-align: center;
@@ -82,7 +86,7 @@ a, div {
 
 p {
   font-size: 1.2em;
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 
 .container {
@@ -114,7 +118,7 @@ p {
 
 .nav-item a {
   color: #427e72;
-  font-family: "Barrio", sans-serif;
+  /* font-family: "Barrio", sans-serif; */
   font-size: 1.2em;
   text-decoration: none;
 }
@@ -147,7 +151,7 @@ p {
 
 .about-text-container {
   margin: 60px 20vw;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .about-header {
@@ -229,7 +233,7 @@ p {
 
 .modal-link {
   color: #427e72;
-  font-family: "Barrio", sans-serif;
+  /* font-family: "Barrio", sans-serif; */
   font-size: 1.2em;
   text-decoration: none;
 }

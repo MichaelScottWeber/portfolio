@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Michael Weber</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans:100,500,700|Noto+Sans:400,700|Nunito:400,700|Raleway:400,700|Rubik:400,700" rel="stylesheet">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@1.9.1/css/boxicons.min.css' rel='stylesheet'>
+
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans:100,500,700|Noto+Sans:400,700|Nunito:400,700|Raleway:400,700|Rubik:400,700|Barrio|Chelsea+Market|Major+Mono+Display|Poiret+One|Tulpen+One|Walter+Turncoat" rel="stylesheet">
+<link href='https://cdn.jsdelivr.net/npm/boxicons@1.9.1/css/boxicons.min.css' rel='stylesheet'>
+
   </head>
   <body>
     <div class="container">
@@ -36,7 +38,7 @@
         </div>
       </header>
       <main>
-        <!-- About Section -->
+        <!-- ===ABOUT SECTION=== -->
         <section id="about" class="about-section">
           <img class="border-svg" src="imgs/jagged-border-1.svg" alt="">
           <div class="about-text-container">
@@ -46,33 +48,73 @@
             <p class="about-text">My goals are to strengthen the skills and knowledge I already posses, continue learning new languages, frameworks and technologies, and find employment with an open and transparent company that will help me to learn and grow through mentorship.</p>
           </div>
         </section>
-        <!-- Projects Section -->
+        <!-- ===PROJECTS SECTION=== -->
         <section id="projects" class="projects-section">
           <img class="border-svg" src="imgs/jagged-border-2.svg" alt="">
           <h3>Projects</h3>
           <p class="project-sub-heading">See what I've been working on</p>
+
           <div class="project-container">
-            <div id="myBtn" class="project"></div>
-          </div>
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <h4>What's Cookin?</h4>
-              <div class="modal-link-container">
-                <a class="modal-link" href="https://afternoon-escarpment-73810.herokuapp.com/" target="_blank">View Site</a>
-                <a class="modal-link" href="https://github.com/MichaelScottWeber/Recipe-Finder" target="_blank">View Source</a>
+
+            <!-- What's Cookin app -->
+            <div class="project whats-cookin"></div>
+            <div class="modal">
+              <div class="modal-content">
+                <h4>What's Cookin?</h4>
+                <div class="modal-link-container">
+                  <a class="modal-link" href="https://afternoon-escarpment-73810.herokuapp.com/" target="_blank">View Site</a>
+                  <a class="modal-link" href="https://github.com/MichaelScottWeber/Recipe-Finder" target="_blank">View Source</a>
+                </div>
+                <p class="project-text"><strong>Description:</strong> A simple wrapper for the <a href="http://www.recipepuppy.com/about/api/" target="_blank">Recipe Puppy API</a>.  Users can search for either recipe titles or ingredients, and the app returns ten recipes (see "What's Next?" below).</p>
+                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS, Grid, JavaScript, Node.js, Express.js, EJS</p>
+                <p class="project-text"><strong>Challenges Overcome:</strong> The goal of this project was to call on an API and present the supplied data in a meaningful way.  I utelized Express and Request for the back-end routing and EJS to display data from the API dynamically within the HTML.  CSS Grid (specifically it's grid-template-columns: minmax feature) allowed the recipes to display responsively and play nice on mobile.</p>
+                <p class="project-text"><strong>What's Next?</strong> One of the biggest things missing from this app is pagination!  The Recipe Puppy API is set up in such a way that it automatically returns only ten results for each search query.  To see more results, you have to append "p=2", 3, 4, etc. to the endpoint url.  I haven't yet figured out how to gracefully code that into the UI, but I'm working on it!</p>
+                <i class='bx bx-x close'></i>
               </div>
-              <p class="project-text"><strong>Description:</strong> A simple wrapper for the <a href="http://www.recipepuppy.com/about/api/" target="_blank">Recipe Puppy API</a>.  Users can search for either recipe titles or ingredients, and the app returns *ten recipes.</p>
-              <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS, Grid, JavaScript, Node.js, Express.js, Request, EJS</p>
-              <p class="project-text"><strong>Challenges Overcome:</strong> The goal of this project was to call on an API and present the supplied data in a meaningful way.  I utelized Express and Request for the back-end routing and EJS to display data from the API dynamically within the HTML.  CSS Grid (specifically it's grid-template-columns: minmax feature) allowed the recipes to display responsively and play nice on mobile.</p>
-              <p class="project-text"><strong>What's Next?</strong> *One of the biggest things missing from this app is pagination!  The Recipe Puppy API is set up in such a way that it automatically returns only ten results for each search query.  To see more results, you have to append "p=2", 3, 4, etc. to the endpoint url.  I haven't yet figured out how to gracefully code that into the UI, but I'm working on it!</p>
-              <i id="close" class='bx bx-x close'></i>
             </div>
+
+            <!-- F-to-C app -->
+            <div class="project f-to-c"></div>
+            <div class="modal">
+              <div class="modal-content">
+                <h4>Fahrenheit to Celsius Converter</h4>
+                <div class="modal-link-container">
+                  <a class="modal-link" href="f-to-c.html" target="_blank">View Site</a>
+                  <a class="modal-link" href="https://github.com/MichaelScottWeber/F-to-C" target="_blank">View Source</a>
+                </div>
+                <p class="project-text"><strong>Description:</strong> A simple web app that will convert degrees Fahrenheit to degrees Celsius, and vice versa.</p>
+                <p class="project-text"><strong>Technologies Used:</strong> HTML, JavaScript, jQuery, Bootstrap</p>
+                <p class="project-text"><strong>Challenges Overcome:</strong> My goal with this project was to become more familiar with Bootstrap for CSS styling and jQuery for DOM manipulation. The logic for how to convert and display the temperature was quite simple, it was switching between the "Fahrenheit to Celsius" and "Celsius to Fahrenheit" states that took more thought and planning.</p>
+                <p class="project-text"><strong>What's Next?</strong> I wanted to utelize Bootstrap as much as possible for this app (in fact, I didn't even include my own stylesheet), but I know there is a lot more room to be creative with the design and styling.  My next step for this project is to customize the look and feel of it.  There is especially a lot of room to draw attention to the switch between conversion states, since I consider this to be the most interesting feature of the app.</p>
+                <i class='bx bx-x close'></i>
+              </div>
+            </div>
+
+            <!-- Portfolio -->
+            <div class="project portfolio"></div>
+            <div class="modal">
+              <div class="modal-content">
+                <h4>Personal Developer Portfolio</h4>
+                <div class="modal-link-container">
+                  <a class="modal-link" href="#" target="_blank">View Site</a>
+                  <a class="modal-link" href="https://github.com/MichaelScottWeber/portfolio" target="_blank">View Source</a>
+                </div>
+                <p class="project-text"><strong>Description:</strong> This site you're on right now! A simple single-page static website to showcase myself as a developer.</p>
+                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+                <p class="project-text"><strong>Challenges Overcome:</strong> Apart from the design, the trickiest part about making this site was coding the pop-up modal.  In order to keep the code light and scalable, I chose to use the getElementsByClassName selector to return node lists of all of the buttons and modals.  Then I ran through them all with a for-loop and put the event listeners inside.  This way I don't have to write a brand new block of JavaScript for each new project I add; once I add it to the HTML, the pop-up modal will automatically work.</p>
+                <p class="project-text"><strong>What's Next?</strong> Apart from the seemingly neverending struggle to find the right fonts, my biggest issues so far with the site are compatability between different browsers. Smooth-scrolling only works on Chrome right now, and my contact links at the bottom of the page are not formating correctly in Safari (probably pertaining to flexbox).</p>
+                <i class='bx bx-x close'></i>
+              </div>
+            </div>
+
+
           </div>
+
         </section>
 
         <!-- <section id="blog" class="blog-section"></section> -->
 
-        <!-- Contact Section -->
+        <!-- ===CONTACT SECTION=== -->
         <section id="contact" class="contact-section">
           <img class="border-svg" src="imgs/jagged-border-3.svg" alt="">
           <h3 class="contact-heading">Get In Touch</h3>

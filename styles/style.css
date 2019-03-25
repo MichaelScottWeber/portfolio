@@ -28,7 +28,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 section {
@@ -47,22 +47,33 @@ main {
 
 h1 {
   color: #094438;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 12vw;
+  /* font-family: "Encode Sans", sans-serif; */
+  /* Major Mono Display is kind of nice.  Should be two lines, not one, around 13vw */
+  /* font-family: 'Major Mono Display', monospace; */
+  /* font-family: 'Chelsea Market', cursive; */
+  /* font-family: 'Walter Turncoat', cursive; */
+  /* font-family: 'Tulpen One', cursive; */
+  /* font-family: 'Barrio', cursive; */
+  /* Poiret One is kinda nice, should be two lines, around 16vw */
+  font-family: 'Poiret One', cursive;
+  font-weight: 100;
+  font-size: 19vw;
   padding: 20px;
 }
 
 h2 {
   color: #427e72;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 8vw;
+  font-family: "Encode Sans", sans-serif;
+  font-weight: 500;
+  font-size: 5vw;
   padding: 30px;
 }
 
 h3 {
   color: #094438;
+  font-family: "Encode Sans", sans-serif;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.5em;
   padding-bottom: 10px;
   text-align: center;
@@ -70,7 +81,7 @@ h3 {
 
 h4 {
   color: #094438;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Encode Sans", sans-serif;
   font-size: 1.6em;
   margin-bottom: 20px;
   text-align: center;
@@ -82,7 +93,7 @@ a, div {
 
 p {
   font-size: 1.2em;
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 
 .container {
@@ -114,7 +125,7 @@ p {
 
 .nav-item a {
   color: #427e72;
-  font-family: "Barrio", sans-serif;
+  /* font-family: "Barrio", sans-serif; */
   font-size: 1.2em;
   text-decoration: none;
 }
@@ -147,7 +158,7 @@ p {
 
 .about-text-container {
   margin: 60px 20vw;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .about-header {
@@ -176,25 +187,35 @@ p {
 
 .project-container {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
   justify-content: center;
   margin: 30px 20px;
 }
 
-.project {
+.whats-cookin {
   background-image: url("../imgs/whats-cookin-app.jpg");
+}
+
+.f-to-c {
+  background-image: url("../imgs/f-to-c-app.jpg");
+}
+
+.portfolio {
+  background-image: url("../imgs/portfolio.jpg");
+}
+
+.project {
   background-size: cover;
   /* border: 2px solid #427e72; */
   border-radius: 10px;
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
   height: 300px;
   max-width: 300px;
 }
 
 .project:hover, .project:focus {
-  /* border: 2px solid #427e72; */
-  box-shadow: 2px 5px 9px 0 rgba(0,0,0,0.3);
+  box-shadow: 2px 5px 9px 0 rgba(0,0,0,0.4);
   cursor: pointer;
 }
 
@@ -229,7 +250,7 @@ p {
 
 .modal-link {
   color: #427e72;
-  font-family: "Barrio", sans-serif;
+  /* font-family: "Barrio", sans-serif; */
   font-size: 1.2em;
   text-decoration: none;
 }

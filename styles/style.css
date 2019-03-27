@@ -23,7 +23,12 @@ img {
 }
 
 body {
-  background-color: #f6f8fa;
+  /* background-color: #f6f8fa; */
+  background-color: #e2e7e2;
+  /* background: #f6f8fa;  fallback for old browsers */
+  /* background: -webkit-linear-gradient(to top, #abbaab, #f6f8fa);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to top, #abbaab, #f6f8fa); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 html {
@@ -59,7 +64,7 @@ h1 {
   /* Poiret One is kinda nice, should be two lines, around 16vw */
   font-family: 'Poiret One', cursive;
   font-weight: 100;
-  font-size: 19vw;
+  font-size: 17vw;
   padding: 20px;
 }
 
@@ -133,7 +138,10 @@ p {
 }
 
 .heading-container {
-  background-color: #f6f8fa;
+  /* background-color: #f6f8fa; */
+  background: #f6f8fa;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f6f8fa, #e2e7e2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f6f8fa, #e2e7e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 90px 0 20px 0;
   width: 100%;
 }
@@ -147,6 +155,7 @@ p {
 .border-svg {
   width: 100%;
   margin: 0;
+  /* background-color: #f6f8fa; */
   background-color: #f6f8fa;
 }
 
@@ -172,6 +181,13 @@ p {
 .about-text {
   color: #e6ebf0;
   margin-bottom: 2em;
+}
+
+.first-line::first-line {
+  color: #e6ebf0;
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: 2em;
 }
 
 .projects-section {

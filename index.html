@@ -44,8 +44,8 @@
           <div class="about-text-container">
             <!-- <p class="about-header">When I was a little kid I was fascinated with making things.</p> -->
             <p class="about-text first-line">Throughout my whole life I've been fascinated with making things. As a kid I used to craft inventions out of broken pens and rubber bands, and later on made my own musical instruments by circuit-bending toys. As an adult I've spent the last ten years working as a professional musician, writing/recording music for TV shows and teaching private and group music lessons.</p>
-            <p class="about-text">Once I discovered how challenging and rewarding web development is, though, I haven't looked back. The feeling of creating something out of thin air, something that other people can interact with and find value in, is what drives me to get up every morning and web development offers me that opportunity like nothing else.</p>
-            <p class="about-text">My goals for the future are to continue learning new languages and frameworks, strengthen my understanding of core HTML, CSS and JavaScript, and find a full-time position that will help me grow as a team-oriented programmer.</p>
+            <p class="about-text">Once I discovered how challenging and rewarding web development is, though, I never looked back. The feeling of creating something out of thin air, something that other people can interact with and find value in, is what drives me to get up every morning and web development offers me that opportunity like nothing else.</p>
+            <p class="about-text">My goals for the future are to continue learning new languages and frameworks, to strengthen my understanding of core HTML, CSS and JavaScript, and find a full-time position that will help me grow as a team-oriented programmer.</p>
           </div>
         </section>
         <!-- ===PROJECTS SECTION=== -->
@@ -55,6 +55,23 @@
           <p class="project-sub-heading">See what I've been working on</p>
 
           <div class="project-container">
+
+            <!-- Music Cue Library -->
+            <div class="project music-library"></div>
+            <div class="modal">
+              <div class="modal-content">
+                <h4>Michael Weber Music</h4>
+                <div class="modal-link-container">
+                  <a class="modal-link" href="https://still-dawn-43753.herokuapp.com/" target="_blank">View Site</a>
+                  <a class="modal-link" href="https://github.com/MichaelScottWeber/music-cue-library" target="_blank">View Source</a>
+                </div>
+                <p class="project-text"><strong>Description:</strong> An online collection of some of the music compositions I've produced. Users can preview the whole collection on the index page or view more details (including a large visual waveform) on each song's show page, and the music creator can login to add, edit, and delete music. </p>
+                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS, Grid, Flexbox, JavaScript, Node.js, Express.js, EJS, Wavesurfer.js, MongoDB, Passport.js</p>
+                <p class="project-text"><strong>Challenges Overcome:</strong> This is certainly my biggest project yet! On the front end it utelizes CSS Grid for the basic page layout, Flexbox for arranging all of the songs on the index page, and basic JavaScript for handling the logic behind the audio previews. On each song's show page, I use Wavesurfer.js to display the visual waveform and handle the audio controls.</br>On the back end, Node.js and Express.js handle all of the CRUD routing while MongoDB stores all of the data (with the exception of the actual music files, which are on an Amazon S3 server). Basic local authentication is handled by Passport.js.</p>
+                <p class="project-text"><strong>What's Next?</strong> The most pertinent issue I'm facing with the app is getting audio to play on each song's show page on mobile. The index page works just fine, but when you go to an individual song's page and click the play button there is no sound (even though the cursor moves along the waveform as though it were playing).</br>Once audio on mobile is fixed, the next major update for the app is to make the songs searchable through their description and keywords, and possibly have the index page show a list of song collections rather then a list of every song.</p>
+                <i class='bx bx-x close'></i>
+              </div>
+            </div>
 
             <!-- What's Cookin app -->
             <div class="project whats-cookin"></div>

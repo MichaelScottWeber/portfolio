@@ -211,6 +211,10 @@ p {
   margin: 30px 20px;
 }
 
+.music-library {
+  background-image: url("../imgs/music-library-app.jpg");
+}
+
 .whats-cookin {
   background-image: url("../imgs/whats-cookin-app.jpg");
 }

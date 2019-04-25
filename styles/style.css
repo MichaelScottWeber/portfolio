@@ -267,6 +267,7 @@ p {
 .modal-link-container {
   display: flex;
   justify-content: space-evenly;
+  justify-content: space-around; /* fallback for space-evenly */
   margin-bottom: 20px;
 }
 
@@ -304,6 +305,7 @@ p {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  justify-content: space-around; /* fallback for space-evenly */
 }
 
 .contact-item {

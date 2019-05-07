@@ -62,7 +62,7 @@ h1 {
   /* font-family: 'Tulpen One', cursive; */
   /* font-family: 'Barrio', cursive; */
   /* Poiret One is kinda nice, should be two lines, around 16vw */
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', sans-serif;
   font-weight: 100;
   font-size: 17vw;
   padding: 20px;
@@ -212,19 +212,19 @@ p {
 }
 
 .music-library {
-  background-image: url("../imgs/music-library-app300.jpg");
+  background-image: url("../imgs/music-library-app300.jpf");
 }
 
 .whats-cookin {
-  background-image: url("../imgs/whats-cookin-app300.jpg");
+  background-image: url("../imgs/whats-cookin-app300.jpf");
 }
 
 .f-to-c {
-  background-image: url("../imgs/f-to-c-app300.jpg");
+  background-image: url("../imgs/f-to-c-app300.jpf");
 }
 
 .portfolio {
-  background-image: url("../imgs/portfolio300.jpg");
+  background-image: url("../imgs/portfolio300.jpf");
 }
 
 .project {

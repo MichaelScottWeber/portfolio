@@ -59,7 +59,23 @@
 
           <div class="project-container">
 
-            <!-- Music Cue Library -->
+            <!-- 5 Day Weather Forecast -->
+            <div class="project weather-app"></div>
+            <div class="modal">
+              <div class="modal-content">
+                <h4>5 Day Weather Forecast</h4>
+                <div class="modal-link-container">
+                  <a class="modal-link" href="https://confident-kare-e5f8b8.netlify.com/" target="_blank" rel="noopener" aria-label="Open the site in a new window">View Site</a>
+                  <a class="modal-link" href="https://github.com/MichaelScottWeber/Five-Day-Forcast" target="_blank" rel="noopener" aria-label="View the GitHub repository for this site">View Source</a>
+                </div>
+                <p class="project-text"><strong>Description:</strong> A weather app that takes your zip code and gives you a five day forecast for your location.  Made with React and the <a href="https://openweathermap.org/api" target="_blank" rel="noopener">Open Weather Map API</a> </p>
+                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS Flexbox, React.js, JavaScript, Axios</p>
+                <p class="project-text"><strong>Challenges Overcome:</strong> With this project I used Axios to connect with an outside web API and, based on the entered location, store weather data in the app's state to display for the user. Not only does the app display the temperature for each day, but it also displays the humidity level and an icon to show wether it is sunny, cloudy, or raining.  I also set the background image to change based on the current weather, and I made a custom CSS spinning animation that displays when the app first loads.</p>
+                <p class="project-text"><strong>What's Next?</strong> Based on how the Open Weather API works, searching for location by zip code is not very accurate; it seems to only recognize larger cities.  The location is much more accurate if you enter your city code but, since looking up city codes is a pain, I would like to figure out a way to turn the entered zip code into a city code within the app before submitting it to the API.  I would also like to expand the functionality so that the user can click on a day and get more detailed weather information.</p>
+                <i class='bx bx-x close'></i>
+              </div>
+            </div>  
+
             <div class="project music-library"></div>
             <div class="modal">
               <div class="modal-content">

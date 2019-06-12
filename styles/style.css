@@ -211,6 +211,10 @@ p {
   margin: 30px 20px;
 }
 
+.weather-app {
+  background-image: url("../imgs/weather-app300.jpg");
+}
+
 .music-library {
   background-image: url("../imgs/music-library-app300.jpg");
 }

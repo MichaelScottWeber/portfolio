@@ -23,19 +23,12 @@ img {
 }
 
 body {
-  /* background-color: #f6f8fa; */
   background-color: #e2e7e2;
-  /* background: #f6f8fa;  fallback for old browsers */
-  /* background: -webkit-linear-gradient(to top, #abbaab, #f6f8fa);  Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(to top, #abbaab, #f6f8fa); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 html {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
-
-
 }
 
 section {
@@ -45,11 +38,6 @@ section {
 nav {
   position: fixed;
   width: 100vw;
-}
-
-main {
-  /* padding-top: 70px; */
-
 }
 
 h1 {
@@ -68,7 +56,13 @@ h1 {
   padding: 20px;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
 h2 {
+  animation: fadeIn 3s .5s ease-out backwards;
   color: #427e72;
   font-family: "Encode Sans", sans-serif;
   font-weight: 500;
@@ -135,6 +129,12 @@ p {
   /* font-family: "Barrio", sans-serif; */
   font-size: 1.2em;
   text-decoration: none;
+  transition-property: border;
+  transition-duration: .2s;
+}
+
+.nav-item a:hover {
+  border-bottom: 1.5px solid #427e72;
 }
 
 .heading-container {
@@ -204,10 +204,13 @@ p {
 }
 
 .project-container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* display: grid; */
+  /* grid-gap: 20px; */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); */
+  /* justify-content: center; */
   margin: 30px 20px;
 }
 
@@ -237,12 +240,14 @@ p {
   border-radius: 10px;
   box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
   height: 300px;
-  max-width: 300px;
+  width: 300px;
+  margin: 20px 10px;
 }
 
 .project:hover, .project:focus {
   box-shadow: 2px 5px 9px 0 rgba(0,0,0,0.4);
   cursor: pointer;
+  transform: rotate(1deg);
 }
 
 .modal {
@@ -284,6 +289,18 @@ p {
 
 .project-text {
   margin-bottom: 20px;
+}
+
+.icon-group {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tech-icon {
+  padding: 15px;
+  max-width: 100px;
 }
 
 .close {
@@ -332,5 +349,6 @@ a.contact-item:hover {
 .copyright-text {
   color: #427e72;
   font-size: 1em;
+  padding-bottom: 10px;
   text-align: center;
 }

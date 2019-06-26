@@ -7,15 +7,13 @@
     <title>Michael Weber</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" type="image/png" href="imgs/browsers.png">
-
-<link href="https://fonts.googleapis.com/css?family=Encode+Sans:100,500,700|Raleway:400,700|Poiret+One" rel="stylesheet">
-<link href='https://cdn.jsdelivr.net/npm/boxicons@1.9.1/css/boxicons.min.css' rel='stylesheet'>
-
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans:100,500,700|Raleway:400,700|Poiret+One" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@1.9.1/css/boxicons.min.css' rel='stylesheet'>
   </head>
+
   <body>
     <div class="container">
       <header>
-        
         <!-- Nav Bar -->
         <nav>
           <div class="navbar">
@@ -32,6 +30,7 @@
             </ul>
           </div>
         </nav>
+
         <!-- Header -->
         <div class="heading-container">
           <div class="title-container">
@@ -41,6 +40,7 @@
         </div>
       </header>
       <main>
+
         <!-- ===ABOUT SECTION=== -->
         <section id="about" class="about-section">
           <img class="border-svg" src="imgs/jagged-border-1.svg" alt="">
@@ -51,6 +51,7 @@
             <p class="about-text">My goals for the future are to continue learning new languages and frameworks, to strengthen my understanding of core HTML, CSS and JavaScript, and find a full-time position that will help me grow as a team-oriented programmer.</p>
           </div>
         </section>
+
         <!-- ===PROJECTS SECTION=== -->
         <section id="projects" class="projects-section">
           <img class="border-svg" src="imgs/jagged-border-2.svg" alt="">
@@ -68,14 +69,19 @@
                   <a class="modal-link" href="https://confident-kare-e5f8b8.netlify.com/" target="_blank" rel="noopener" aria-label="Open the site in a new window">View Site</a>
                   <a class="modal-link" href="https://github.com/MichaelScottWeber/Five-Day-Forcast" target="_blank" rel="noopener" aria-label="View the GitHub repository for this site">View Source</a>
                 </div>
-                <p class="project-text"><strong>Description:</strong> A weather app that takes your zip code and gives you a five day forecast for your location.  Made with React and the <a href="https://openweathermap.org/api" target="_blank" rel="noopener">Open Weather Map API</a> </p>
-                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS Flexbox, React.js, JavaScript, Axios</p>
-                <p class="project-text"><strong>Challenges Overcome:</strong> With this project I used Axios to connect with an outside web API and, based on the entered location, store weather data in the app's state to display for the user. Not only does the app display the temperature for each day, but it also displays the humidity level and an icon to show wether it is sunny, cloudy, or raining.  I also set the background image to change based on the current weather, and I made a custom CSS spinning animation that displays when the app first loads.</p>
-                <p class="project-text"><strong>What's Next?</strong> Based on how the Open Weather API works, searching for location by zip code is not very accurate; it seems to only recognize larger cities.  The location is much more accurate if you enter your city code but, since looking up city codes is a pain, I would like to figure out a way to turn the entered zip code into a city code within the app before submitting it to the API.  I would also like to expand the functionality so that the user can click on a day and get more detailed weather information.</p>
+                <p class="project-text"><strong>Description:</strong> Enter in a zip code, and the app will show you the projected temperature and forecast for the next five days.  Clicking on a day will bring up more specific details, including a brief description of the weather conditions, the amount of rain that is expected, the speed and direction of the wind, and the humidity level.  Made with React and the <a href="https://openweathermap.org/api" target="_blank" rel="noopener">Open Weather Map API</a>. </p>
+                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS Flexbox and Grid, React.js, JavaScript, Axios, React Spring, Moment.js</p>
+                <div class="icon-group">
+                  <div class="tech-icon"><img src="imgs/react-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/js-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/html-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/css-icon.svg" alt="React.js"></div>
+                </div>
                 <i class='bx bx-x close'></i>
               </div>
             </div>  
 
+            <!-- Music Library -->
             <div class="project music-library"></div>
             <div class="modal">
               <div class="modal-content">
@@ -84,10 +90,14 @@
                   <a class="modal-link" href="https://still-dawn-43753.herokuapp.com/" target="_blank" rel="noopener" aria-label="Open the site in a new window">View Site</a>
                   <a class="modal-link" href="https://github.com/MichaelScottWeber/music-cue-library" target="_blank" rel="noopener" aria-label="View the GitHub repository for this site">View Source</a>
                 </div>
-                <p class="project-text"><strong>Description:</strong> An online collection of some of the music compositions I've produced. Users can preview the whole collection on the index page or view more details (including a large visual waveform) on each song's show page, and the music creator can login to add, edit, and delete music. </p>
-                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS, Grid, Flexbox, JavaScript, Node.js, Express.js, EJS, Wavesurfer.js, MongoDB, Passport.js</p>
-                <p class="project-text"><strong>Challenges Overcome:</strong> This is certainly my biggest project yet! On the front end it utelizes CSS Grid for the basic page layout, Flexbox for arranging all of the songs on the index page, and basic JavaScript for handling the logic behind the audio previews. On each song's show page, I use Wavesurfer.js to display the visual waveform and handle the audio controls.</br>On the back end, Node.js and Express.js handle all of the CRUD routing while MongoDB stores all of the data (with the exception of the actual music files, which are on an Amazon S3 server). Basic local authentication is handled by Passport.js.</p>
-                <p class="project-text"><strong>What's Next?</strong> The most pertinent issue I'm facing with the app is getting audio to play on each song's show page on mobile. The index page works just fine, but when you go to an individual song's page and click the play button there is no sound (even though the cursor moves along the waveform as though it were playing).</br>Once audio on mobile is fixed, the next major update for the app is to make the songs searchable through their description and keywords, and possibly have the index page show a list of song collections rather then a list of every song.</p>
+                <p class="project-text"><strong>Description:</strong> An online collection of some of the music compositions I've produced. Users can preview the whole collection on the index page, or click to view more details for each song including a description, a list of keywords, and a big visual waveform.  There is also a login page, allowing the creator to add new songs or edit/delete exisiting ones. </p>
+                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS Grid and Flexbox, JavaScript, Node.js, Express.js, EJS, Wavesurfer.js, MongoDB, Passport.js, Amazon S3</p>
+                <div class="icon-group">
+                  <div class="tech-icon"><img src="imgs/js-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/html-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/css-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/node-icon.svg" alt="Node.js"></div>
+                </div>                
                 <i class='bx bx-x close'></i>
               </div>
             </div>
@@ -101,16 +111,20 @@
                   <a class="modal-link" href="https://afternoon-escarpment-73810.herokuapp.com/" target="_blank" rel="noopener" aria-label="Open the site in a new window">View Site</a>
                   <a class="modal-link" href="https://github.com/MichaelScottWeber/Recipe-Finder" target="_blank" rel="noopener" aria-label="View the GitHub repository for this site">View Source</a>
                 </div>
-                <p class="project-text"><strong>Description:</strong> An interactive wrapper for the <a href="http://www.recipepuppy.com/about/api/" target="_blank" rel="noopener">Recipe Puppy API</a>.  Users can search for either recipe titles or ingredients, and the app returns ten recipes (see "What's Next?" below).</p>
-                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS, Grid, JavaScript, Node.js, Express.js, EJS</p>
-                <p class="project-text"><strong>Challenges Overcome:</strong> The goal of this project was to call on an API and present the supplied data in a meaningful way.  I utilized Express and Request for the back-end routing and EJS to display data from the API dynamically within the HTML.  CSS Grid (specifically it's grid-template-columns: minmax feature) allowed the recipes to display responsively and play nice on mobile.</p>
-                <p class="project-text"><strong>What's Next?</strong> One of the biggest things missing from this app is pagination!  The Recipe Puppy API is set up in such a way that it automatically returns only ten results for each search query.  To see more results, you have to append "p=2", 3, 4, etc. to the endpoint url.  I haven't yet figured out how to gracefully code that into the UI, but a solution is in the works!</p>
+                <p class="project-text"><strong>Description:</strong> An interactive wrapper for the <a href="http://www.recipepuppy.com/about/api/" target="_blank" rel="noopener">Recipe Puppy API</a>.  Users can search for either recipe titles or ingredients, and the app returns a list of meals, including a picture of the dish, a list of ingredients, and a link to the full recipe.</p>
+                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS Grid, JavaScript, Node.js, Express.js, EJS</p>
+                <div class="icon-group">
+                  <div class="tech-icon"><img src="imgs/js-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/html-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/css-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/node-icon.svg" alt="Node.js"></div>
+                </div>
                 <i class='bx bx-x close'></i>
               </div>
             </div>
 
             <!-- F-to-C app -->
-            <div class="project f-to-c"></div>
+            <!-- <div class="project f-to-c"></div>
             <div class="modal">
               <div class="modal-content">
                 <h4>Fahrenheit to Celsius Converter</h4>
@@ -124,7 +138,7 @@
                 <p class="project-text"><strong>What's Next?</strong> I wanted to utelize Bootstrap as much as possible for this app (in fact, I didn't even include my own stylesheet), but I know there is a lot more room to be creative with the design and styling.  My next step for this project is to customize the look and feel of it.  There is especially a lot of room to draw attention to the switch between conversion states, since I consider this to be the most interesting feature of the app.</p>
                 <i class='bx bx-x close'></i>
               </div>
-            </div>
+            </div> -->
 
             <!-- Portfolio -->
             <div class="project portfolio"></div>
@@ -135,14 +149,16 @@
                   <a class="modal-link" href="#" target="_blank" rel="noopener" aria-label="Open the site in a new window">View Site</a>
                   <a class="modal-link" href="https://github.com/MichaelScottWeber/portfolio" target="_blank" rel="noopener" aria-label="View the GitHub repository for this site">View Source</a>
                 </div>
-                <p class="project-text"><strong>Description:</strong> The site you're on right now! A simple, single-page static website to showcase myself as a developer.</p>
-                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS, Flexbox, CSS Grid, JavaScript</p>
-                <p class="project-text"><strong>Challenges Overcome:</strong> Apart from the design, the trickiest part about making this site was coding the pop-up modal.  In order to keep the code light and scalable, I chose to use the getElementsByClassName selector to return node lists of all of the buttons and modals.  Then I ran through them all with a for-loop and put the event listeners inside.  This way I don't have to write a brand new block of JavaScript for each future project I add; once I add it to the HTML, the pop-up modal will automatically work.</p>
-                <p class="project-text"><strong>What's Next?</strong> Although I fear I'll never be satisfied with the design and the font-choices, my biggest issues so far with the site are compatability between different browsers. One such example is smooth-scrolling, which only works on Chrome right now.  Even though I like the simplicity of handling the scrolling behavior with just pure CSS, there are probably third-party JavaScript plugins that to help me out with this.</p>
+                <p class="project-text"><strong>Description:</strong> The site you're on right now! A simple, single-page static website with a pop-up modal projects section.</p>
+                <p class="project-text"><strong>Technologies Used:</strong> HTML, CSS Flexbox and Grid, JavaScript</p>
+                <div class="icon-group">
+                  <div class="tech-icon"><img src="imgs/js-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/html-icon.svg" alt="React.js"></div>
+                  <div class="tech-icon"><img src="imgs/css-icon.svg" alt="React.js"></div>
+                </div>
                 <i class='bx bx-x close'></i>
               </div>
             </div>
-
 
           </div>
 
@@ -159,8 +175,8 @@
               <a class="contact-item" href="https://github.com/MichaelScottWeber" target="_blank" rel="noopener" aria-label="GitHub">
                 <i class='bx bxl-github'></i>
               </a>
-              <a class="contact-item" href="https://codepen.io/michaelscottweber/" target="_blank" rel="noopener" aria-label="CodePen">
-                <i class='bx bxl-codepen'></i>
+              <a class="contact-item" href="https://twitter.com/iammichaelweber" target="_blank" rel="noopener" aria-label="Twitter">
+                <i class='bx bxl-twitter'></i>
               </a>
               <a class="contact-item" href="https://www.linkedin.com/in/michaelscottweber/" target="_blank" rel="noopener" aria-label="LinkedIn">
                 <i class='bx bxl-linkedin'></i>
@@ -175,5 +191,6 @@
     </div>
 
     <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll-min.js"></script>
   </body>
 </html>

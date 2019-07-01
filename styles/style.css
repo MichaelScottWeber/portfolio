@@ -214,6 +214,10 @@ p {
   margin: 30px 20px;
 }
 
+.guitar-quiz {
+  background-image: url("../imgs/guitar-quiz300.jpg");
+}
+
 .weather-app {
   background-image: url("../imgs/weather-app300.jpg");
 }
